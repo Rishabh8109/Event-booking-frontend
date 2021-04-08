@@ -1,0 +1,86 @@
+* {
+  margin : 0;
+  padding : 0;
+}
+
+body {
+  background: whitesmoke;
+}
+
+header {
+  display : flex;
+  justify-content:  space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  background-color:#255CCF;
+  position: sticky;
+  top : 0;
+}
+
+header h3 {
+  color : white;
+}
+
+nav > ul {
+  display : flex;
+  justify-content:  flex-start;
+  align-items: center;
+  width : 400px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  margin : 0 1rem;
+  color : whitesmoke
+}
+
+nav > ul > li:last-child {
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-size:.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color : whitesmoke
+}
+
+nav > ul > li:hover {
+ color : whitesmoke;
+}
+
+nav > ul > li > a.active {
+  padding: .4rem;
+  color:white;
+  border-bottom: 2px solid white;
+}
+
+.event_container {
+  width : 400px;
+  height: 100px;
+  border: 1px dashed grey;
+  margin: 3rem auto;
+  display: block;
+  padding: .5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+}
+
+.create_event_btn {
+  border:2px solid #255CCF;
+  outline:none;
+  padding: .5rem;
+  cursor: pointer;
+  color : #255CCF;
+  font-weight: bold;
+  margin: 1.5rem auto;
+  display: block;
+  background-color: white;
+}
+
+.create_event_btn:hover {
+  background-color: #255CCF;
+  color: white;
+}

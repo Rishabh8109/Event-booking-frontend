@@ -1,0 +1,73 @@
+.container {
+  width : 500px;
+  display:block;
+  margin: 5rem auto;
+}
+
+.form-control {
+  width : 100%;
+  max-width : 40%;
+}
+
+.form-control >  input {
+ width : 400px;
+ height : 2rem;
+ margin : 0.5rem 0;
+ border : 1px solid grey;
+ padding-left: .3rem;
+}
+
+textarea {
+  width : 400px;
+  height : 2rem;
+  margin : 0.5rem 0;
+  border : 1px solid grey;
+  padding-left: .3rem;
+  padding-top: .4rem;
+}
+
+.form-control > label {
+  font-size: .7rem;
+}
+
+.form-control > input:focus {
+  border:none;
+}
+
+input::placeholder {
+  padding-left: .3rem;
+}
+
+ .form-actions > button {
+   cursor: pointer;
+ }
+
+.form-actions > :nth-child(1){
+   padding : .5rem .5rem;
+   margin : 1rem 0;
+   margin-right: .5rem;
+   background-color: purple;
+   border:none;
+   outline :none;
+   color : #fff;
+   font-weight:  600;
+   font-family: inherit;
+   border-radius: 2px;
+}
+
+.form-actions > :nth-child(2) {
+  padding : .5rem .5rem;
+  margin : 1rem 0;
+  margin-right: .3rem;
+  border: 2px solid purple;
+  outline :none;
+  color : purple;
+  font-weight:  600;
+  font-family: inherit;
+  border-radius: 2px;
+}
+
+.form-actions > :nth-child(2):hover {
+  background-color: rgb(145 , 43 , 93 , .4);
+}
+
