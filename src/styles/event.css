@@ -1,5 +1,4 @@
 .event_list {
-
   border-radius: 5px;
   padding:  .7rem;
   margin: .5rem auto;
@@ -39,22 +38,48 @@
   align-items: center;
 }
 
-.event-list-item button {
+ button {
   padding : .4rem;
   border:none;
   outline:none;
-  background: blue;
+  background: blueviolet;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  opacity: .8;
 }
 
-.event-list-item button:hover {
+ button:hover {
   opacity: 1;
+  background-color: blue;
 }
 
 .event-list-item > div:nth-child(2) p {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.booked-event-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booked-event-list-item > div > p:nth-child(1) {
+  color: black;
+  font-size: .9rem;
+}
+
+.booked-event-list-item  > div > p:nth-child(2){
+  color: grey;
+  font-size: .6rem
+}
+
+.empty {
+  border: 1px dashed grey;
+  width : 200px;
+  margin: 5rem auto;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  opacity: .6;
 }

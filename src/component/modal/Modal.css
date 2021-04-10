@@ -48,9 +48,41 @@
   cursor: pointer;
 }
 
+.modal-footer > .event-action > button {
+  background-color: #255CCF;
+  border: none;
+  outline: none;
+  padding: .4rem;
+  margin-bottom: 1em;
+  width:100px;
+  margin:0 .5rem;
+  float: left;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  float: right;
+}
+
+.modal-footer > .event-action > button:nth-child(1){
+  background: none;
+  border: 1px solid blue;
+  color: blue;
+}
+
+.modal-footer > .event-action > button:nth-child(1):hover {
+  background: blue;
+  color: white;
+}
+
+.modal-footer > .event-action {
+  padding-left: .6rem;
+}
+
 .modal-footer > button:hover {
   opacity: .9;
 }
+
+
 
 .modal-body{
   font-family: sans-serif;

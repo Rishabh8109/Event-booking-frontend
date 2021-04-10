@@ -65,6 +65,8 @@ input::placeholder {
   font-weight:  600;
   font-family: inherit;
   border-radius: 2px;
+
+  background-color: transparent;
 }
 
 .form-actions > :nth-child(2):hover {

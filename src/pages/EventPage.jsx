@@ -4,14 +4,13 @@ import axios from "axios";
 import EventList from "./EventList";
 import Loading from "../component/Loading/Loading";
 
-
 export default function EventPage() {
   const [open, setopen] = useState(false);
   const [events, setevents] = useState(null);
   const [loading, setloading] = useState(false);
 
   // get token from localstorage
-  const token = localStorage.getItem('token');
+  const token = localStorage.getItem("token");
 
   function fetchEvent() {
     const resBody = {
@@ -25,13 +24,16 @@ export default function EventPage() {
            date
            creator {
               _id
+              createdEvent {
+                title
+              }
            }
          }
      }
      `,
     };
 
-  setloading(true);
+    setloading(true);
     // fetching events
     axios({
       method: "POST",
@@ -68,13 +70,13 @@ export default function EventPage() {
         </div>
       )}
 
-      {
-         loading ? <Loading />  :
-         <div className="Event_lists">
-            <EventList events={events} />
-          </div>
-      }
-
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="Event_lists">
+          <EventList events={events} />
+        </div>
+      )}
     </>
   );
 }
